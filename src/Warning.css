@@ -1,0 +1,21 @@
+* {
+    font-family: sans-serif;
+    margin: 0 0 8px 0;
+    
+  }
+  button {
+    height: 40px;
+    width: 200px;
+    top: 100px;
+    position: absolute;
+
+  }
+  .warning {
+    background-color: rgb(238, 117, 37);
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  
+    font-size: 14pt;
+    color: white;
+  }

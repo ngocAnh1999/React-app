@@ -1,12 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// import App from './App';
+// import * as serviceWorker from './serviceWorker';
+// import Toggle from './Toggle';
+// import LoginControl from './LoginControl';
+// import Warning from './Warning';
+// import Clock from './Clock';
+import NumberList from './NumberList';
+import Blog from './NumberList';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const numbers = [1, 2, 3, 4, 5];
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const posts = [
+    {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
+    {id: 2, title: 'Installation', content: 'You can install React from npm.'}
+  ];
+
+ReactDOM.render(
+        <Blog posts = {posts} />,
+        document.getElementById('root')
+);
+
+// setInterval(tick, 1000);
+
+// ReactDOM.render(<App />, document.getElementById('root'));
+
+// serviceWorker.unregister();
